@@ -59,12 +59,12 @@ class RemedySharedLambdaLayerIdentificationStack(Stack):
             removal_policy = RemovalPolicy.DESTROY
         )
 
-        #provider = _custom.Provider(
-        #    self, 'provider',
-        #    on_event_handler = remedy
-        #)
+        provider = _custom.Provider(
+            self, 'provider',
+            on_event_handler = remedy
+        )
 
-        #resource = CustomResource(
-        #    self, 'resource',
-        #    service_token = provider.service_token
-        #)
+        resource = CustomResource(
+            self, 'resource',
+            service_token = provider.service_token
+        )
