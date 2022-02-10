@@ -34,7 +34,7 @@ def handler(event, context):
                                     LayerName = item['LayerName'],
                                     VersionNumber = item2['Version']
                                 )
-                                print(iam_policy)
+                                print(iam_policy['Policy'])
                             except:
                                 print('No Policy!')
                                 pass
